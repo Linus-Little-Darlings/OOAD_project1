@@ -14,7 +14,7 @@ public class Lion extends Feline {
     }
 
     public void eat() {
-        //smaller change of eating the zookeeper than just eating
+        //smaller chance of eating the zookeeper than just eating
     	Random rand = new Random();
         int wildCard = rand.nextInt(10);
         if(wildCard % 3 == 0) {

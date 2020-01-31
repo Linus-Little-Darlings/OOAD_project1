@@ -12,17 +12,33 @@ public class Zookeeper {
         Animal hippo1 = new Hippo("Henry", "hippo");
         Animal rhino1 = new Rhino("Remy", "rhino");
         Animal elephant1 = new Elephant("Eloise", "elephant");
+        Animal cat2 = new Cat("Charlie", "cat");
+        Animal lion2 = new Lion("Leah", "lion");
+        Animal tiger2 = new Tiger("Tyler", "tiger");
+        Animal dog2 = new Dog("Darla", "dog");
+        Animal wolf2 = new Wolf("Willis", "wolf");
+        Animal hippo2 = new Hippo("Hillary", "hippo");
+        Animal rhino2 = new Rhino("Rachel", "rhino");
+        Animal elephant2 = new Elephant("Elbert", "elephant");
         
         //add animals to the zoo
         zoo.add(cat1);
+        zoo.add(cat2);
         zoo.add(lion1);
+        zoo.add(lion2);
         zoo.add(tiger1);
+        zoo.add(tiger2);
         zoo.add(dog1);
+        zoo.add(dog2);
         zoo.add(wolf1);
+        zoo.add(wolf2);
         zoo.add(hippo1);
+        zoo.add(hippo2);
         zoo.add(rhino1);
+        zoo.add(rhino2);
         zoo.add(elephant1);
-
+        zoo.add(elephant2);
+        
         
         List<Animal> animals = zoo.getAnimals();
         //complete zookeeper actions
@@ -30,9 +46,7 @@ public class Zookeeper {
         rollCallAnimals(animals);
         feedAnimals(animals);
         playAnimals(animals);
-        shutdownAnimals(animals);
-        
-        
+        shutdownAnimals(animals);        
     }
     //wake all animals
     public static void wakeAnimals(List<Animal> z) {
